@@ -1,0 +1,89 @@
+{
+    "_embedded": {
+        "contacts": [
+            {
+                "id": 1,
+                "firstname": "Konstantinos",
+                "lastname": "Kokordelis",
+                "email": "kokordelis.konstantinos@gmail.com",
+                "phone": "6978710560",
+                "company": "Piraeus Direct Solutions",
+                "position": "Developer",
+                "notes": "",
+                "url": "https://yt3.ggpht.com/yti/APfAmoG5wCm6KaNdNeFEmKvipHic5K9rPDq8dHYvnfNdcA=s88-c-k-c0x00ffffff-no-rj-mo"
+            },
+            {
+                "id": 2,
+                "firstname": "Vasileios",
+                "lastname": "Kokordelis",
+                "email": "kokordelis.vasileios@gmail.com",
+                "phone": "2104203298",
+                "company": "ABConstructions",
+                "position": "Electrical Engineer",
+                "notes": "",
+                "url": ""
+            },
+            {
+                "id": 3,
+                "firstname": "Panagiotis",
+                "lastname": "Kokordelis",
+                "email": "p.kokordelis@gmail.com",
+                "phone": "6986564863",
+                "company": "Kimi S.A.",
+                "position": "Mechanical Engineer",
+                "notes": "",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "firstname": "Georgia",
+                "lastname": "Diomi",
+                "email": "georgia.diomi@gmail.com",
+                "phone": "6944279746",
+                "company": "Leonteios High School",
+                "position": "English Teacher",
+                "notes": "",
+                "url": "https://lh3.googleusercontent.com/ogw/ADea4I6WMHcbmc7XxJ1ef85fgrjigjGRfVEDBVKhlgbt=s48-c-mo"
+            },
+            {
+                "id": 5,
+                "firstname": "Dimitris",
+                "lastname": "Georgaros",
+                "email": "dimgeo@gmail.com",
+                "phone": "2105443698",
+                "company": "Eurohome",
+                "position": "Transportation Coordinator",
+                "notes": "",
+                "url": ""
+            },
+            {
+                "id": 6,
+                "firstname": "Dimitris",
+                "lastname": "Stavroulakis",
+                "email": "StavroulakisD@pds.gr",
+                "phone": "2103898929",
+                "company": "Piraeus Direct Solutions",
+                "position": "Developer",
+                "notes": "",
+                "url": ""
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/contacts-app/api/contacts"
+        },
+        "profile": {
+            "href": "http://localhost:8080/contacts-app/api/profile/contacts"
+        },
+        "search": {
+            "href": "http://localhost:8080/contacts-app/api/contacts/search"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 6,
+        "totalPages": 1,
+        "number": 0
+    }
+}
