@@ -45,7 +45,6 @@ export default {
       { text: "", value: "url", width: 100 },
       { text: "Name", value: "firstname" },
       { text: "Company", value: "company" },
-      { text: "Job title", value: "position" },
       { text: "E-mail address", value: "email" },
       { text: "Phone number", value: "phone" },
       { text: "", value: "actions", sortable: false, width: 100 }
@@ -71,11 +70,12 @@ export default {
     contacts: [],
     totalContacts: 0,
     footerProps: {
-      // disableItemsPerPage: true
+      disableItemsPerPage: true,
+      itemsPerPageOptions: [100, 200, 500]
     },
     contactOptions: {
       page: 1,
-      itemsPerPage: 10
+      itemsPerPage: 500
     },
     selectedId: null,
     selectedItem: {
