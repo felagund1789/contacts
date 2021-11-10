@@ -7,7 +7,7 @@ se<template>
     :server-items-length="totalContacts"
     :loading="loading"
     :footer-props="footerProps"
-    @click:row="viewContact"
+    @click:row="editContact"
   >
     <template v-slot:[`item.url`]="{ item }">
       <v-avatar size="36" :color="randomColor()">
@@ -76,19 +76,6 @@ export default {
     contactOptions: {
       page: 1,
       itemsPerPage: 500
-    },
-    selectedId: null,
-    selectedItem: {
-      id: null,
-      firstname: "",
-      lastname: "",
-      url: ""
-    },
-    defaultItem: {
-      id: null,
-      firstname: "",
-      lastname: "",
-      url: ""
     }
   }),
 
@@ -125,10 +112,8 @@ export default {
       this.loading = false;
     },
 
-    viewContact(item) {
-      this.selectedId = item.id;
-      this.selectedItem = Object.assign({}, item);
-      this.$emit("view", this.selectedItem);
+    editContact(item) {
+      this.$emit("edit", item);
     },
 
     randomColor() {
